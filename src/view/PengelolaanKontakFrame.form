@@ -93,9 +93,9 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnExport" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnExport" min="-2" pref="90" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="btnImport" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnImport" min="-2" pref="90" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -199,11 +199,6 @@
             <Property name="text" type="java.lang.String" value="Hapus"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnExport">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Export"/>
-          </Properties>
-        </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -228,6 +223,11 @@
         <Component class="javax.swing.JButton" name="btnImport">
           <Properties>
             <Property name="text" type="java.lang.String" value="Import"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnExport">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Export"/>
           </Properties>
         </Component>
       </SubComponents>

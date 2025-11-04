@@ -40,10 +40,10 @@ public class PengelolaanKontakFrame extends javax.swing.JFrame {
         btnTambah = new javax.swing.JButton();
         btnEdit = new javax.swing.JButton();
         btnHapus = new javax.swing.JButton();
-        btnExport = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         btnImport = new javax.swing.JButton();
+        btnExport = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,8 +67,6 @@ public class PengelolaanKontakFrame extends javax.swing.JFrame {
 
         btnHapus.setText("Hapus");
 
-        btnExport.setText("Export");
-
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -83,6 +81,8 @@ public class PengelolaanKontakFrame extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         btnImport.setText("Import");
+
+        btnExport.setText("Export");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -112,9 +112,9 @@ public class PengelolaanKontakFrame extends javax.swing.JFrame {
                                 .addComponent(txtNama)
                                 .addComponent(txtNomorTelepon)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(btnExport)
+                            .addComponent(btnExport, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(btnImport))))
+                            .addComponent(btnImport, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
