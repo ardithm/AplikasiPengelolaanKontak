@@ -10,23 +10,23 @@ public class KontakController {
     private KontakDAO contactDAO;
     
     public KontakController() {
-    contactDAO = new KontakDAO();
+        contactDAO = new KontakDAO();
     }
     // Method mengambil semua data kontak
     public List<Kontak> getAllContacts() throws SQLException {
-    return contactDAO.getAllContacts();
+        return contactDAO.getAllContacts();
     }
     // Method menambah kontak
     public void addContact(String nama, String nomorTelepon, String kategori)
-    throws SQLException {
-    Kontak contact = new Kontak(0, nama, nomorTelepon, kategori);
-    contactDAO.addContact(contact);
+            throws SQLException {
+        Kontak contact = new Kontak(0, nama, nomorTelepon, kategori);
+        contactDAO.addContact(contact);
     }
     // Method mengupdate kontak
     public void updateContact(int id, String nama, String nomorTelepon,
-    String kategori) throws SQLException {
-    Kontak contact = new Kontak(id, nama, nomorTelepon, kategori);
-    contactDAO.updateContact(contact);
+            String kategori) throws SQLException {
+        Kontak contact = new Kontak(id, nama, nomorTelepon, kategori);
+        contactDAO.updateContact(contact);
     }
     // Method menghapus kontak
     public void deleteContact(int id) throws SQLException {
@@ -34,10 +34,10 @@ public class KontakController {
     }
     // Method pencarian kontak
     public List<Kontak> searchContacts(String keyword) throws SQLException {
-    return contactDAO.searchContacts(keyword);
+        return contactDAO.searchContacts(keyword);
     }
     public boolean isDuplicatePhoneNumber(String nomorTelepon, Integer
-    excludeId) throws SQLException {
-    return contactDAO.isDuplicatePhoneNumber(nomorTelepon, excludeId);
+            excludeId) throws SQLException {
+        return contactDAO.isDuplicatePhoneNumber(nomorTelepon, excludeId);
     }
 }
